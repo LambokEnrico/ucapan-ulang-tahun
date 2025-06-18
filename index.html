@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebuah Kejutan Untukmu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="background-animation-container"></div>
+
+
+    <div id="initial-scene" class="scene active">
+        <div class="heart-container">
+            <div id="heart" class="heart">
+                <div class="keyhole"></div>
+                <span>TAP buat liat kejutannya</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="password-scene" class="scene">
+        <div class="card">
+            <h2>Wahh keknya gagal nihh..</h2>
+            <p>Butuh password buat bukanya, coba tanya hatimu~</p>
+            <div class="password-box">
+                <input type="text" id="password-input" placeholder="Ketik password di sini...">
+                <button id="submit-password">Buka</button>
+            </div>
+            <a href="#" id="clue-link">Butuh CLUE?</a>
+        </div>
+    </div>
+
+    <div id="clue-scene" class="scene">
+        <div class="card quiz-card">
+            <div id="quiz-container">
+                <h3 id="question-text"></h3>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+            <div id="clue-result" style="display: none;">
+                <h4>Clue Terakhir!</h4>
+                <p>Passwordnya itu ANAGRAM dari huruf awal setiap pertanyaan yang baru aja kamu jawab lohhh. </p>
+                <p class="sub-text">Ingat gaa, kalo ngga yaudah balik lagi jawab pertanyaannya hahahah! 😉</p>
+                <div class="button-group">
+                    <button id="back-to-password" class="btn">Inget dongg.. buka kunci deh!</button>
+                    <button id="restart-quiz-btn" class="btn btn-secondary">WADIDAW Lupaa masehh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="final-scene" class="scene">
+        <div class="envelope-wrapper">
+            <div id="envelope" class="envelope">
+                <div class="cover"></div>
+                <div class="paper">
+                    <p class="tap-to-open">Klik untuk buka</p>
+                </div>
+                <div class="flap"></div>
+            </div>
+        </div>
+        <div id="birthday-card" class="card birthday-card-content">
+            <h1>Happy Birthday, My Love!</h1>
+            <img src="foto-ayang.jpg" alt="Foto Spesial Kita" class="special-pic">
+            <p class="message">
+                Selamat ulang tahun si ayanggg. Semoga setiap hal yang kamu kerjakan kedepannya.. menjadi manfaat buat kamu dan orang sekitar kamu
+            </p>
+            <p class="message">
+                Aku harap di umur ke 21 tahun ini.. ayang menjadi sosok yang membawa keceriaan setiap harinya.. dan jangan lupa untuk terus selalu BAHAGIA!! Sesuai dengan arti dari nama kamu hihihi
+            </p>
+            <p class="signature">
+                Dari akuu yeuuu,<br>
+                Si MR L.E.P
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
